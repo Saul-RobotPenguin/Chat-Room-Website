@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room Website 💬</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="title">Saul's Chat Room Website 💬</h1>
+    <div class="container">
+      <div class="chat-dump"></div>
+    </div>
+
+    <form action="" class="chat-form">
+      <label class="chat-label">
+        Enter A Message:
+        <input type="text" class="chat-input" />
+      </label>
+      <input type="submit" class="chat-submit" value="enter" />
+    </form>
+    <div class="container-explanation">
+      <p>
+        This is my Chat Room app, Just copy this websites link and paste it on
+        another tab to try the messaging functionality out!
+      </p>
+    </div>
+
+    <footer id="footer">
+      <p>Developed and Designed By Saul.C</p>
+    </footer>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
