@@ -3,9 +3,10 @@ const app = express();
 const server = require("http").createServer(app);
 const path = require("path");
 const io = require("socket.io")(server);
+const router = express.Router();
 // const { joinUser, removeUser } = require("./users");
 
-app.use(express.static(path.join(__dirname, "/static")));
+router.use(express.static(path.join(__dirname, "/static")));
 
 io.on("connection", (socket) => {
   console.log("Someone Connected!");
